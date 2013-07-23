@@ -1,4 +1,4 @@
-Delayed Job Honeyabdger
+Delayed Job Honeybadger
 -----------------------
 
 Notify Honeybadger of errors in Delayed Job workers.

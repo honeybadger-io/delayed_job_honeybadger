@@ -16,10 +16,10 @@ Gem::Specification.new do |s|
   s.add_dependency('delayed_job')
 
   s.files = %w[
-    "delayed_job_honeybadger.gemspec",
-    "LICENSE",
-    "README.md",
-    "lib/delayed_job_honeybadger.rb",
-    "lib/delayed/plugins/honeybadger.rb"
+    delayed_job_honeybadger.gemspec
+    LICENSE
+    README.md
+    lib/delayed_job_honeybadger.rb
+    lib/delayed/plugins/honeybadger.rb
   ]
 end

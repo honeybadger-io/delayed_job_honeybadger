@@ -1,8 +1,3 @@
-# Notify Honeybadger of errors in DelayedJob workers
-# in /config/initializers/
-# 
-# modified
-
 module Delayed
   module Plugins
     class Honeybadger < Plugin

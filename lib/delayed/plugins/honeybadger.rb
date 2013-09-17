@@ -7,7 +7,11 @@ module Delayed
             :error_class   => error.class.name,
             :error_message => "#{ error.class.name }: #{ error.message }",
             :context       => {
-              :failed_job => job.inspect,
+              :job_id => job.id,
+              :handler => job.handler,
+              :last_error => job.last_error,
+              :attempts => job.attempts,
+              :queue => job.queue
             }
           )
           super if defined?(super)

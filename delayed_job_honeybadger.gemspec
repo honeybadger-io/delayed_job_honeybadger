@@ -15,6 +15,11 @@ Gem::Specification.new do |s|
   s.add_dependency('honeybadger')
   s.add_dependency('delayed_job')
 
+  s.add_development_dependency('rspec')
+  s.add_development_dependency('guard')
+  s.add_development_dependency('guard-rspec')
+  s.add_development_dependency('fuubar')
+
   s.files = %w[
     delayed_job_honeybadger.gemspec
     LICENSE

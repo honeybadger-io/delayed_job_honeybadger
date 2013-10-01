@@ -30,6 +30,7 @@ Gem::Specification.new do |s|
     Guardfile
     LICENSE
     README.md
+    Rakefile
     delayed_job_honeybadger.gemspec
     lib/delayed/plugins/honeybadger.rb
     lib/delayed_job_honeybadger.rb

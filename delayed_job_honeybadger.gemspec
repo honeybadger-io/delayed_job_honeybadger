@@ -1,7 +1,7 @@
 Gem::Specification.new do |s|
   s.name          = 'delayed_job_honeybadger'
-  s.version       = '0.0.1'
-  s.date          = '2013-07-22'
+  s.version       = '0.0.2'
+  s.date          = '2013-10-01'
 
   s.summary       = "Honeybadger plugin for Delayed Job"
   s.description   = "Notifies Honeybadger of errors in Delayed Job workers."
@@ -20,11 +20,24 @@ Gem::Specification.new do |s|
   s.add_development_dependency('guard-rspec')
   s.add_development_dependency('fuubar')
 
+  ## Leave this section as-is. It will be automatically generated from the
+  ## contents of your Git repository via the gemspec task. DO NOT REMOVE
+  ## THE MANIFEST COMMENTS, they are used as delimiters by the task.
+  # = MANIFEST =
   s.files = %w[
-    delayed_job_honeybadger.gemspec
+    Gemfile
+    Gemfile.lock
+    Guardfile
     LICENSE
     README.md
-    lib/delayed_job_honeybadger.rb
+    delayed_job_honeybadger.gemspec
     lib/delayed/plugins/honeybadger.rb
+    lib/delayed_job_honeybadger.rb
+    spec/delayed/backend/test.rb
+    spec/delayed/serialization/test.rb
+    spec/lib/delayed_job_honeybadger_spec.rb
+    spec/spec_helper.rb
+    spec/support/cobra_job.rb
   ]
+  # = MANIFEST =
 end

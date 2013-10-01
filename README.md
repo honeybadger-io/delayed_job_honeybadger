@@ -1,6 +1,9 @@
 Delayed Job Honeybadger
 -----------------------
 
+[![Build Status](https://secure.travis-ci.org/honeybadger-io/delayed_job_honeybadger.png?branch=master)](http://travis-ci.org/honeybadger-io/delayed_job_honeybadger)
+[![Gem Version](https://badge.fury.io/rb/delayed_job_honeybadger.png)](http://badge.fury.io/rb/delayed_job_honeybadger)
+
 Notify Honeybadger of errors in Delayed Job workers.
 
 Adapted from [this](http://stackoverflow.com/a/14172132/1332687) and

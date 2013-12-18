@@ -25,6 +25,14 @@ module Delayed
           payload = payload.object if payload.is_a? Delayed::PerformableMethod
           payload.extend Notify
         end
+
+        lifecycle.around(:perform) do |worker, &block|
+          begin
+            block.call(worker)
+          ensure
+            ::Honeybadger.context.clear!
+          end
+        end
       end
     end
   end

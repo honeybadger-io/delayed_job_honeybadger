@@ -9,6 +9,20 @@ describe 'Delayed job integration' do
       backtrace: kind_of(Array),
       context: kind_of(Hash)
     }))
-    expect { Delayed::Worker.new.work_off(1) }.not_to raise_error
+    expect { Delayed::Worker.new.work_off }.not_to raise_error
+  end
+
+  it 'clears Honeybadger context' do
+    Delayed::Job.enqueue CobraJob.new
+    Honeybadger.context.should_receive(:clear!).at_least(1).times
+    Delayed::Worker.new.work_off
+  end
+
+  context "job completes without exception" do
+    it 'clears Honeybadger context' do
+      Delayed::Job.enqueue HappyJob.new
+      Honeybadger.context.should_receive(:clear!).at_least(1).times
+      Delayed::Worker.new.work_off
+    end
   end
 end

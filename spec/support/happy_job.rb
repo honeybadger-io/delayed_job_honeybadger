@@ -1,6 +1,6 @@
 class HappyJob
   def perform
-    puts 'Yay!'
+    # 'Yay!'
   end
 
   def max_attempts

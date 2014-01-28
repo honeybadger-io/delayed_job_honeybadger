@@ -5,5 +5,5 @@ require 'delayed/plugins/honeybadger'
 
 Delayed::Worker.plugins << Delayed::Plugins::Honeybadger
 module DelayedJobHoneybadger
-  VERSION = '0.0.3'
+  VERSION = '0.0.4'
 end

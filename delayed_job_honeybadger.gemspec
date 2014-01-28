@@ -1,7 +1,7 @@
 Gem::Specification.new do |s|
   s.name          = 'delayed_job_honeybadger'
-  s.version       = '0.0.3'
-  s.date          = '2014-01-02'
+  s.version       = '0.0.4'
+  s.date          = '2014-01-28'
 
   s.summary       = "Honeybadger plugin for Delayed Job"
   s.description   = "Notifies Honeybadger of errors in Delayed Job workers."

@@ -16,7 +16,3 @@ Adapted from [this](http://stackoverflow.com/a/14172132/1332687) and
 3. Commit your changes `git commit -am "Boom"`
 3. Push to your branch `git push origin my_branch`
 4. Send a [pull request](https://github.com/honeybadger-io/delayed_job_honeybadger/pulls)
-
-## Todo
-
-Add RSpec and write some tests

@@ -9,6 +9,8 @@ Notify Honeybadger of errors in Delayed Job workers.
 Adapted from [this](http://stackoverflow.com/a/14172132/1332687) and
 [this](https://gist.github.com/2223758)
 
+**Important:** As of [Honeybadger](https://github.com/honeybadger-io/honeybadger-ruby) v1.14.0, delayed_job is shipped with it.
+
 ## Contributing
 
 1. Fork it.

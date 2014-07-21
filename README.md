@@ -1,4 +1,4 @@
-Delayed Job Honeybadger
+[DEPRECATED] Delayed Job Honeybadger
 -----------------------
 
 [![Build Status](https://secure.travis-ci.org/honeybadger-io/delayed_job_honeybadger.png?branch=master)](http://travis-ci.org/honeybadger-io/delayed_job_honeybadger)
